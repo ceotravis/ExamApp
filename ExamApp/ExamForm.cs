@@ -63,15 +63,15 @@ namespace ExamApp {
             }
         }
 
-        private void nextPage1_Click(object sender, EventArgs e) {
+        private void NextPage1_Click(object sender, EventArgs e) {
             ExamControl.SelectTab(1);
         }
 
-        private void nextPage2_Click(object sender, EventArgs e) {
+        private void NextPage2_Click(object sender, EventArgs e) {
             ExamControl.SelectTab(2);
         }
 
-        private void nextPage3_Click(object sender, EventArgs e) {
+        private void NextPage3_Click(object sender, EventArgs e) {
             ExamControl.SelectTab(3);
         }
 

@@ -324,7 +324,7 @@
             this.nextPage1.TabIndex = 1;
             this.nextPage1.Text = "Nästa sida";
             this.nextPage1.UseVisualStyleBackColor = true;
-            this.nextPage1.Click += new System.EventHandler(this.nextPage1_Click);
+            this.nextPage1.Click += new System.EventHandler(this.NextPage1_Click);
             // 
             // page2
             // 
@@ -503,7 +503,7 @@
             this.nextPage2.TabIndex = 2;
             this.nextPage2.Text = "Nästa sida";
             this.nextPage2.UseVisualStyleBackColor = true;
-            this.nextPage2.Click += new System.EventHandler(this.nextPage2_Click);
+            this.nextPage2.Click += new System.EventHandler(this.NextPage2_Click);
             // 
             // page3
             // 
@@ -744,7 +744,7 @@
             this.nextPage3.TabIndex = 3;
             this.nextPage3.Text = "Nästa sida";
             this.nextPage3.UseVisualStyleBackColor = true;
-            this.nextPage3.Click += new System.EventHandler(this.nextPage3_Click);
+            this.nextPage3.Click += new System.EventHandler(this.NextPage3_Click);
             // 
             // page4
             // 
