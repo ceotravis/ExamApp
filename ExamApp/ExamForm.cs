@@ -31,7 +31,8 @@ namespace ExamApp {
         }
 
         /// <summary>
-        /// Gets the selected radiobutton from all groupboxes in a flowlayout and adds the radiobutton's text to an array
+        /// Iterate through each GroupBox in the FlowLayout, 
+        /// find the selected RadioButton in each group, and add the text of the selected RadioButton to an array.
         /// </summary>
         /// <param name="flowLayout">The parent containing the groupboxes</param>
         /// <returns></returns>
@@ -49,8 +50,8 @@ namespace ExamApp {
         }
 
         /// <summary>
-        /// Gets the contents of all textboxes in a flowlayoutpanel and adds it to an array together 
-        /// with the the label over it
+        /// Gets the content of all textboxes in a flowlayoutpanel and adds it to an array together 
+        /// with the the label over the textbox
         /// </summary>
         /// <param name="flowLayout"></param>
         private void GetTextAnswer(FlowLayoutPanel flowLayout) {
