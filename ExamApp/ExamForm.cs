@@ -13,10 +13,10 @@ namespace ExamApp {
         }
 
         /// <summary>
-        /// Gets the answer from the groupbox and compares it with a list of correct answers.
+        /// Compare the user's answer with the correct answer
         /// </summary>
         /// <param name="groupBoxNum">The groupbox where the question resides</param>
-        /// <param name="answer">The user's answers</param>
+        /// <param name="answer">The user's answer</param>
         /// <returns></returns>
         private string CheckAndCompareAnswer(int groupBoxNum, string answer) {
             try {
