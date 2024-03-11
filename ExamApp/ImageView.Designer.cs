@@ -48,10 +48,11 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::ExamApp.Properties.Resources.tasks;
-            this.pictureBox1.Location = new System.Drawing.Point(165, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(148, 2);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(233, 339);
+            this.pictureBox1.Size = new System.Drawing.Size(267, 390);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -66,6 +67,7 @@
             this.Name = "ImageView";
             this.Text = "xkcd: Tasks";
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
