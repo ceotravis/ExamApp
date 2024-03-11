@@ -4,9 +4,9 @@ namespace ExamApp {
     public partial class ExamForm : Form {
         private int groupBoxNum = 0;
 
-        private List<String> radioAnswers = new List<String>();
-        private List<String> textAnswers = new List<String>();
-        private List<String> correctAnswers = new List<String>() { "1or och 0or som används i datorn", "Förstå moral", "Klasser och objekt existerar", "Handlar om att lära datorer att göra specifika uppgifter", "1943", "Nja", "Antalet transistorer i en krets kommer att fördubblas ungefär vartannat år" };
+        private List<string> radioAnswers = new List<string>();
+        private List<string> textAnswers = new List<string>();
+        private List<string> correctAnswers = new List<string>() { "1or och 0or som används i datorn", "Förstå moral", "Klasser och objekt existerar", "Handlar om att lära datorer att göra specifika uppgifter", "1943", "Nja", "Antalet transistorer i en krets kommer att fördubblas ungefär vartannat år" };
 
         public ExamForm() {
             InitializeComponent();
