@@ -148,6 +148,7 @@
             this.ExamControl.SelectedIndex = 0;
             this.ExamControl.Size = new System.Drawing.Size(784, 461);
             this.ExamControl.TabIndex = 0;
+            this.ExamControl.Tag = "2";
             // 
             // page1
             // 
@@ -322,6 +323,7 @@
             this.nextPage1.Name = "nextPage1";
             this.nextPage1.Size = new System.Drawing.Size(100, 37);
             this.nextPage1.TabIndex = 1;
+            this.nextPage1.Tag = "1";
             this.nextPage1.Text = "Nästa sida";
             this.nextPage1.UseVisualStyleBackColor = true;
             this.nextPage1.Click += new System.EventHandler(this.NextPage1_Click);
@@ -501,6 +503,7 @@
             this.nextPage2.Name = "nextPage2";
             this.nextPage2.Size = new System.Drawing.Size(100, 37);
             this.nextPage2.TabIndex = 2;
+            this.nextPage2.Tag = "2";
             this.nextPage2.Text = "Nästa sida";
             this.nextPage2.UseVisualStyleBackColor = true;
             this.nextPage2.Click += new System.EventHandler(this.NextPage2_Click);
@@ -742,6 +745,7 @@
             this.nextPage3.Name = "nextPage3";
             this.nextPage3.Size = new System.Drawing.Size(100, 37);
             this.nextPage3.TabIndex = 3;
+            this.nextPage3.Tag = "3";
             this.nextPage3.Text = "Nästa sida";
             this.nextPage3.UseVisualStyleBackColor = true;
             this.nextPage3.Click += new System.EventHandler(this.NextPage3_Click);

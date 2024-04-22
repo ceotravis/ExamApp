@@ -63,17 +63,42 @@ namespace ExamApp {
                 }
             }
         }
+        
+        /// <summary>
+        /// Change to the specified ExamControl tab
+        /// </summary>
+        /// <param name="tab">The tab to change to</param>
+        /// <exception cref="InvalidOperationException">ExamControl needs to be initialized</exception>
+        /// <exception cref="ArgumentException">The input string must be a number</exception>
+        /// <exception cref="ArgumentOutOfRangeException">You cannot change to a tab that does not exist</exception>
+        private void ChangeTab(string tab) {
+            if (ExamControl == null) {
+                throw new InvalidOperationException("ExamControl is not initialized");
+            }
+
+            if (!Int32.TryParse(tab, out int value)) {
+                throw new ArgumentException("Cannot convert tab to int");
+            }
+
+            if (value < 0 || value >= ExamControl.TabCount) {
+                throw new ArgumentOutOfRangeException(nameof(tab), $"{tab} is out of range!");
+            }
+
+            ExamControl.SelectTab(value);
+        }
+
+        // TODO: Do not force unwrap these
 
         private void NextPage1_Click(object sender, EventArgs e) {
-            ExamControl.SelectTab(1);
+            ChangeTab(((Button)sender).Tag.ToString()!);
         }
 
         private void NextPage2_Click(object sender, EventArgs e) {
-            ExamControl.SelectTab(2);
+            ChangeTab(((Button)sender).Tag.ToString()!);
         }
 
         private void NextPage3_Click(object sender, EventArgs e) {
-            ExamControl.SelectTab(3);
+            ChangeTab(((Button)sender).Tag.ToString()!);
         }
 
         private async void turnIn_Click(object sender, EventArgs e) {
