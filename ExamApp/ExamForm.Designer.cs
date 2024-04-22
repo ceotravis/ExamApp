@@ -38,7 +38,7 @@
             this.question3C = new System.Windows.Forms.RadioButton();
             this.question3B = new System.Windows.Forms.RadioButton();
             this.question3A = new System.Windows.Forms.RadioButton();
-            this.nextPage1 = new System.Windows.Forms.Button();
+            this.nextPage0 = new ExamApp.ENextPageButton();
             this.page2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.pageFlow2 = new System.Windows.Forms.FlowLayoutPanel();
@@ -52,7 +52,7 @@
             this.question5A = new System.Windows.Forms.RadioButton();
             this.question6 = new System.Windows.Forms.Label();
             this.question6Answer = new System.Windows.Forms.RichTextBox();
-            this.nextPage2 = new System.Windows.Forms.Button();
+            this.nextPage1 = new ExamApp.ENextPageButton();
             this.page3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.pageFlow3 = new System.Windows.Forms.FlowLayoutPanel();
@@ -71,7 +71,7 @@
             this.question9C = new System.Windows.Forms.RadioButton();
             this.question9B = new System.Windows.Forms.RadioButton();
             this.question9A = new System.Windows.Forms.RadioButton();
-            this.nextPage3 = new System.Windows.Forms.Button();
+            this.nextPage3 = new ExamApp.ENextPageButton();
             this.page4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.pageFlow4 = new System.Windows.Forms.FlowLayoutPanel();
@@ -167,7 +167,7 @@
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.pageFlow1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.nextPage1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.nextPage0, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 2);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -315,18 +315,17 @@
             this.question3A.Text = "Förstå moral";
             this.question3A.UseVisualStyleBackColor = true;
             // 
-            // nextPage1
+            // nextPage0
             // 
-            this.nextPage1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.nextPage1.AutoSize = true;
-            this.nextPage1.Location = new System.Drawing.Point(335, 389);
-            this.nextPage1.Name = "nextPage1";
-            this.nextPage1.Size = new System.Drawing.Size(100, 37);
-            this.nextPage1.TabIndex = 1;
-            this.nextPage1.Tag = "1";
-            this.nextPage1.Text = "Nästa sida";
-            this.nextPage1.UseVisualStyleBackColor = true;
-            this.nextPage1.Click += new System.EventHandler(this.NextPage1_Click);
+            this.nextPage0.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.nextPage0.AutoSize = true;
+            this.nextPage0.Location = new System.Drawing.Point(335, 389);
+            this.nextPage0.Name = "nextPage0";
+            this.nextPage0.ParentTabControl = this.ExamControl;
+            this.nextPage0.Size = new System.Drawing.Size(100, 37);
+            this.nextPage0.TabIndex = 1;
+            this.nextPage0.Text = "Nästa sida";
+            this.nextPage0.UseVisualStyleBackColor = true;
             // 
             // page2
             // 
@@ -345,7 +344,7 @@
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.Controls.Add(this.pageFlow2, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.nextPage2, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.nextPage1, 0, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 2);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -495,18 +494,17 @@
             this.question6Answer.TabIndex = 4;
             this.question6Answer.Text = "";
             // 
-            // nextPage2
+            // nextPage1
             // 
-            this.nextPage2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.nextPage2.AutoSize = true;
-            this.nextPage2.Location = new System.Drawing.Point(335, 389);
-            this.nextPage2.Name = "nextPage2";
-            this.nextPage2.Size = new System.Drawing.Size(100, 37);
-            this.nextPage2.TabIndex = 2;
-            this.nextPage2.Tag = "2";
-            this.nextPage2.Text = "Nästa sida";
-            this.nextPage2.UseVisualStyleBackColor = true;
-            this.nextPage2.Click += new System.EventHandler(this.NextPage2_Click);
+            this.nextPage1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.nextPage1.AutoSize = true;
+            this.nextPage1.Location = new System.Drawing.Point(335, 389);
+            this.nextPage1.Name = "nextPage1";
+            this.nextPage1.ParentTabControl = this.ExamControl;
+            this.nextPage1.Size = new System.Drawing.Size(100, 37);
+            this.nextPage1.TabIndex = 2;
+            this.nextPage1.Text = "Nästa sida";
+            this.nextPage1.UseVisualStyleBackColor = true;
             // 
             // page3
             // 
@@ -743,12 +741,11 @@
             this.nextPage3.AutoSize = true;
             this.nextPage3.Location = new System.Drawing.Point(335, 389);
             this.nextPage3.Name = "nextPage3";
+            this.nextPage3.ParentTabControl = this.ExamControl;
             this.nextPage3.Size = new System.Drawing.Size(100, 37);
             this.nextPage3.TabIndex = 3;
-            this.nextPage3.Tag = "3";
             this.nextPage3.Text = "Nästa sida";
             this.nextPage3.UseVisualStyleBackColor = true;
-            this.nextPage3.Click += new System.EventHandler(this.NextPage3_Click);
             // 
             // page4
             // 
@@ -1289,10 +1286,10 @@
         private RichTextBox question12Answer;
         private TableLayoutPanel tableLayoutPanel5;
         private TableLayoutPanel tableLayoutPanel6;
-        private Button nextPage1;
-        private Button nextPage2;
-        private Button nextPage3;
         private Button turnIn;
         private LinkLabel xkcdLink;
+        private ENextPageButton nextPage0;
+        private ENextPageButton nextPage1;
+        private ENextPageButton nextPage3;
     }
 }

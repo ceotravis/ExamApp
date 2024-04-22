@@ -87,20 +87,6 @@ namespace ExamApp {
             ExamControl.SelectTab(value);
         }
 
-        // TODO: Do not force unwrap these
-
-        private void NextPage1_Click(object sender, EventArgs e) {
-            ChangeTab(((Button)sender).Tag.ToString()!);
-        }
-
-        private void NextPage2_Click(object sender, EventArgs e) {
-            ChangeTab(((Button)sender).Tag.ToString()!);
-        }
-
-        private void NextPage3_Click(object sender, EventArgs e) {
-            ChangeTab(((Button)sender).Tag.ToString()!);
-        }
-
         private async void turnIn_Click(object sender, EventArgs e) {
             // Get all of the user's answers 
             await GetRadioChecked(pageFlow1);
