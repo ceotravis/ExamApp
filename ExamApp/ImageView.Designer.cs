@@ -64,6 +64,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(579, 433);
             this.Name = "ImageView";
             this.Text = "xkcd: Tasks";
             this.tableLayoutPanel1.ResumeLayout(false);
